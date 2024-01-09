@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculaterExersize.MainPage">
+
+    <ScrollView>
+        <Border Stroke="PaleTurquoise" StrokeThickness="5">
+            <VerticalStackLayout>
+
+                <Label Text="calculator" FontSize="20" TextColor="DarkSlateGray" VerticalOptions="Fill"/>
+
+           <Grid BackgroundColor="Gainsboro">
+             <Grid.RowDefinitions>
+               <RowDefinition  Height="60" Grid.ColumnSpan="4" />
+               <RowDefinition Height="20" />
+               <RowDefinition Height="20"/>
+               <RowDefinition  Height="20"/>
+               <RowDefinition Height="20"/>
+             </Grid.RowDefinitions>
+               
+             <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+             </Grid.ColumnDefinitions>
+
+                    <BoxView
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Color="White" />
+                    <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center" />
+
+                </Grid>
+        </VerticalStackLayout>
+        </Border>
+    </ScrollView>
+
+</ContentPage>
